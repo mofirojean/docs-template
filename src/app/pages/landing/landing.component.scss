@@ -1,0 +1,21 @@
+a#get-started {
+  background-color: #3b82f6;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #2e55d4;
+    transition: all ease-in 0.2s;
+  }
+}
+
+a#github {
+  background-color: white;
+  color: #343745;
+  border: 1px solid #0f172a;
+
+  &:hover {
+    background-color: #0f172a;
+    color: white;
+    transition: all ease-in 0.2s;
+  }
+}

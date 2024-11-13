@@ -1,27 +1,97 @@
-# DocsTemplate
+# Angular Documentation Starter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Welcome to the **Angular Documentation Starter** project! This repository provides a simple, customizable template designed for Angular developers to create and organize documentation for their Angular projects and libraries. Clone and adapt this project to easily showcase components, modules, and best practices, making it a breeze to communicate your project’s technical details.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Customization](#customization)
+- [Special Thanks](#special-thanks)
+- [License](#license)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **User-Friendly Layout**: Pre-configured with a clean and accessible structure.
+- **Customizable Sections**: Easily add sections for modules, components, APIs, and usage examples.
+- **Responsive Design**: Optimized for mobile and desktop displays.
+- **Powered by ng-docs**: Uses the ng-docs library for seamless documentation setup in Angular.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+To use this Angular Documentation Starter, follow the steps below.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Prerequisites
 
-## Further help
+Make sure you have Node.js and Angular CLI installed:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install -g @angular/cli
+```
+
+### Installation
+
+1. **Clone this repository**:
+
+    ```bash
+    git clone https://github.com/mofirojean/docs-template.git
+    ```
+
+2. **Navigate into the project directory**:
+
+    ```bash
+    cd docs-template
+    ```
+
+3. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+---
+
+## Usage
+
+After installation, you can start the development server to view and edit your documentation.
+
+```bash
+ng serve
+```
+
+Then, open your browser and go to `http://localhost:4200` to view the documentation template.
+
+1. **Add Documentation Sections**: Customize the sections provided in the `src/app` folder. Add pages for your components, services, or other features as needed.
+2. **Configure Navigation**: Modify the navigation and sidebar components as needed to guide users through your documentation.
+3. **Customize Styles**: Edit styles in the `src/styles.css` file to match your branding.
+
+---
+
+## Customization
+
+Feel free to adapt this template to fit the specific needs of your project:
+
+- **Update Content**: Modify placeholder content in the `app` directory to include information about your own Angular project or library.
+- **Add Pages**: Create additional pages as required for detailed documentation of your project’s components, services, modules, etc.
+- **Adjust Layout**: Modify styles and layout to suit your preferred look and feel.
+
+---
+
+## Special Thanks
+
+A special thanks to the creator of the **ng-docs** library, which powers the core documentation structure of this project. The ng-docs library makes it easy for Angular developers to build structured, interactive documentation with minimal setup.
+
+> [ng-docs Library](https://github.com/ng-doc/ng-doc) - Link to the official ng-docs library repository.
+
+---
+
+## License
+
+This project is licensed under the MIT License.

@@ -1,7 +1,24 @@
-<ng-doc-root>
+<ng-doc-root [sidebar]="!isLandingPage" [noWidthLimit]="isLandingPage" [footerContent]="footerContent">
 	<ng-doc-navbar>
-			<h3 style="margin: 0" ngDocNavbarLeft>MyAwesomeDoc</h3>
+    <h3 style="margin: 0" class="font-bold text-2xl cursor-pointer" routerLink="" ngDocNavbarLeft>DocsTemplate</h3>
+    <div class="flex gap-3 ml-4 items-center" @preventInitialChild ngDocNavbarRight>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/mofirojean/docs-template" target="_blank" rel="noopener noreferrer">
+          <i class="{{ faBrandIcon('github') }} text-2xl text-slate-800 dark:text-doc-dark-text"></i>
+        </a>
+        <a href="https://x.com/mofirojean" target="_blank" rel="noopener noreferrer">
+          <i class="{{ faBrandIcon('x-twitter') }} text-2xl text-slate-800 dark:text-doc-dark-text"></i>
+        </a>
+      </div>
+      <ng-doc-theme-toggle/>
+    </div>
 	</ng-doc-navbar>
 	<ng-doc-sidebar></ng-doc-sidebar>
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+  <ng-template #footerContent>
+    <div class="text-center font-bold doc-footer">MIT © 2024 made with <i
+      class="{{ faIcon('heart') }} mx-1 text-sm text-slate-800 dark:text-doc-dark-text"></i> by
+      <a href="https://x.com/mofirojean" target="_blank" class="ml-1 jean" rel="noopener noreferrer">Mofiro Jean</a>
+    </div>
+  </ng-template>
 </ng-doc-root>
